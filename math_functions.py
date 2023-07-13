@@ -10,5 +10,3 @@ print(pow(pi,3))
 print(math.sqrt(pi))
 print(max(pi,g))
 print(min(pi,g))
-
-#test101
