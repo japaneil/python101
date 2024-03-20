@@ -29,6 +29,7 @@ print(band)  # KeyError: 'drums'
 band["drums"] = "John"
 print(band)
 
+# Returns and remove a (key, value) pair from the dictionary.
 print(band.popitem())
 print(band)
 
@@ -70,3 +71,4 @@ print(band["1"]["Name"])   # Accessing a nested value
 
 band["1"]["Name"] = "New Tom"     # Changing a nested value
 print(band)                          # KeyError
+print(band["2"]["Instrument"] == "Sax")
