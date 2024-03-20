@@ -5,6 +5,6 @@ print(" ")
 #     print("True")
 # else:
 #     print("False")
-    
-#Ternary operator
+
+# Ternary operator
 print("True") if meaning > 10 else print("False")
