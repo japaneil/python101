@@ -13,3 +13,38 @@ print(users.index("Neil"))
 print(str(users[0:]).replace(","," and").replace("'",""))
 print(str(users[-1:]).replace(","," and").replace("'",""))
 print("The size of your list is " + str(size(len(users))).replace("size.","").lower()+".")
+
+users.append("Satvik")
+
+users += ["Jason","Dave","Mia"]
+print(users)
+
+users.extend(["Robets","Jimmy"])
+print(users)
+
+users.insert(0,"Alice")
+print(users)
+
+users.remove("Satvik")
+print("\n" + str(users))
+
+# del users
+# print(users)
+
+# users.clear()
+# print(users)
+users.insert(0,"alice")
+users.sort()
+print(users)
+
+users.sort(key=str.lower)
+print(users)
+
+nums = [1,2,3,4,5,6,7]
+nums.reverse()
+print(nums)
+
+nums.sort(reverse=True)
+print(nums)
+
+print(sorted(nums))
