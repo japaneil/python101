@@ -48,3 +48,14 @@ nums.sort(reverse=True)
 print(nums)
 
 print(sorted(nums))
+
+numscopy = nums.copy()
+mynums = list(nums)
+myset = nums[0:]
+
+print(numscopy)
+print(sorted(mynums))
+print(myset)
+
+mylist = list([0,1,2,3,4,5,6,7,8,9])
+print(len(mylist), mylist[:3], mylist[-3:]) 
