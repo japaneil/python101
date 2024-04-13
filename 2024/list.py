@@ -15,7 +15,7 @@ print(users.index("Neil"))
 print(str(users[0:]).replace(",", " and").replace("'", ""))
 print(str(users[-1:]).replace(",", " and").replace("'", ""))
 print("The size of your list is " +
-      str(size(len(users))).replace("size.", "").lower()+".")
+str(size(len(users))).replace("size.", "").lower()+".")
 
 users.append("Satvik")
 

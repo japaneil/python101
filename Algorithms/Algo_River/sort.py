@@ -4,24 +4,28 @@ matrix = [
     [0,1,1,1],
     [0,1,0,1]
 ]
-
-coord = []
-x = 0
+tnum = 0
+def num(x: int):
+    tnum = (matrix[i].count(x))
+    return tnum
+l_coord = []
+x = 1
 
 for i in range(len(matrix)): 
-            
-            num = 0
-            tnum = (matrix[i].count(1))
+            cnum = 0
             j = matrix[i].index(1)
-            coord.append([i,j])
-            num +=1
-            if num < tnum:
+            l_coord.append(tuple([i,j]))
+            cnum +=1
+            while cnum <= num(1):
                 k = matrix[i].index(1,j+x,len(matrix[i]))
-                coord.append([i,k])
-                num +=1
-                if num != tnum:
+                l_coord.append(tuple([i,k]))
+                cnum +=1
+                if cnum != num(1):
                     x += 1
+                    print(cnum == num(1))
+                    print(x)
                 else:
                     x = 0
-            
-print(coord)
+                    print(cnum == num(1))
+s_coord = set(l_coord)            
+print(s_coord)
