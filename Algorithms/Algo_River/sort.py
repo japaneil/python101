@@ -9,9 +9,9 @@ def num(x: int):
     tnum = (matrix[i].count(x))
     return tnum
 l_coord = []
-x = 1
 
 for i in range(len(matrix)): 
+            x = 1
             cnum = 0
             j = matrix[i].index(1)
             l_coord.append(tuple([i,j]))
