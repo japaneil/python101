@@ -27,5 +27,6 @@ for i in range(len(matrix)):
                 else:
                     x = 0
                     print(cnum == num(1))
-s_coord = set(l_coord)            
+s_coord = set(l_coord)    
+print(l_coord)        
 print(s_coord)
