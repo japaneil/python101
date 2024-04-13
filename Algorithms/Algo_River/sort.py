@@ -30,6 +30,3 @@ for i in range(len(matrix)):
 s_coord = set(l_coord)    
 print(l_coord)        
 print(s_coord)
-
-
-
