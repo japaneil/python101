@@ -15,19 +15,25 @@ for i in range(len(matrix)):
             cnum = 0
             j = matrix[i].index(1)
             l_coord.append(tuple([i,j]))
+            add = j
             cnum +=1
             while cnum <= num(1,i):
-                k = matrix[i].index(1,j+x,len(matrix[i]))
+                if add > len(matrix[i]):
+                    add = add - (add - len(matrix[i]))
+                k = matrix[i].index(1,j+x)
                 l_coord.append(tuple([i,k]))
+                add = k
                 cnum +=1
+                print(add+x)
                 if cnum != num(1,i):
                     x += 1
                     print(cnum == num(1,i))
-                    print(x)
+                    # print(x)
                 else:
                     x = 0
                     print(cnum == num(1,i))
-                    print(x)
+                    
+                    # print(k)
 s_coord = set(l_coord)    
 print(l_coord)        
 print(s_coord)

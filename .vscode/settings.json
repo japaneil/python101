@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
         "tnum"
-    ]
+    ],
+    "python.REPL.enableREPLSmartSend": false
 }
